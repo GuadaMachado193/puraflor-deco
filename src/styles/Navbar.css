@@ -1,0 +1,124 @@
+.topbar {
+    background: #1c1612;
+    color: #9c8c82;
+    text-align: center;
+    padding: 8px;
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(250, 248, 245, 0.96);
+    border-bottom: 1px solid #e8e2db;
+    backdrop-filter: blur(10px);
+}
+
+.nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.logo-main {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #1c1612;
+}
+
+.logo-sub {
+    font-size: 8px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: #9c8c82;
+    margin-top: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6b5d54;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1c1612;
+}
+
+.btn-nav-wa {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #1c1612;
+    color: #faf8f5 !important;
+    padding: 9px 18px;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-nav-wa:hover {
+    background: #3d332b !important;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1c1612;
+    padding: 4px;
+}
+
+@media(max-width:768px) {
+    .nav-links {
+        display: none
+    }
+
+    .hamburger {
+        display: flex
+    }
+}
+
+.mob-menu {
+    display: none;
+    background: #faf8f5;
+    border-top: 1px solid #e8e2db;
+}
+
+.mob-menu.open {
+    display: block;
+}
+
+.mob-menu a {
+    display: block;
+    padding: 14px 2rem;
+    font-size: 13px;
+    border-bottom: 1px solid #f0ebe3;
+    color: #1c1612;
+}

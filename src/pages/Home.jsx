@@ -9,6 +9,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { products, WHATSAPP_NUMBER } from "../utils/constants";
+import "../styles/Home.css";
 
 export default function Home({ onSelectProduct }) {
   return (
@@ -21,10 +22,9 @@ export default function Home({ onSelectProduct }) {
         <div className="hero-body">
           <div className="hero-content">
             <p className="hero-eyebrow">Objetos con alma · Hecho a mano en Argentina</p>
-            <h1 className="hero-h1">El concreto <em>como</em><br />poesía visual.</h1>
-            <p className="hero-p">Piezas únicas de concreto y arcilla, moldeadas con paciencia para transformar cualquier espacio en algo memorable.</p>
+            <h1 className="hero-h1">Donde todo nace <br />de lo <em>simple</em>.</h1>
             <div className="btn-row">
-              <a href="#catalogo" className="btn-primary">Ver Catálogo <ArrowForwardIcon style={{ fontSize: "14px" }} /></a>
+              <a href="#catalogo" className="btn-primary">Explorar piezas <ArrowForwardIcon style={{ fontSize: "14px" }} /></a>
               <a href="#proceso" className="btn-ghost">Cómo trabajamos</a>
             </div>
           </div>
@@ -35,12 +35,24 @@ export default function Home({ onSelectProduct }) {
       <section id="nosotros" className="about">
         <div className="about-inner">
           <div>
-            <p className="about-eyebrow">Quiénes somos</p>
-            <h2 className="about-h2">Hacemos objetos que<br /><em>cuentan historias.</em></h2>
-            <p className="about-p">Somos un taller familiar. Nos enamoramos del concreto y la arcilla porque son materiales honestos: no esconden sus imperfecciones, las celebran. Cada textura y cada pequeña irregularidad es parte de lo que hace única a tu pieza.</p>
-            <p className="about-p">No tenemos stock porque no queremos fabricar en serie. Cuando hacés un pedido, lo creamos para vos, con el tono que elegiste. Eso lleva tiempo, y ese tiempo vale la pena.</p>
+            <p className="about-eyebrow">QUIÉN SOY </p>
+            <h2 className="about-h2">Soy Flor, detrás de <br /><em>Pura Flor.</em></h2>
+            <p className="about-p">El concreto apareció en mi vida...<br />
+              y me enamoré.
+            </p>
+            <p className="about-p">Me atrapó su forma:<br />
+              imperfecto, única. <br />
+              <br />
+              Desde entonces, creo piezas sin repetir. <br />
+              Sin serie. Sin apuro. <br />
+               <br />
+              Así nació Pura Flor. <br />
+             <br />
+              Bienvenidos a mi mundo del concreto.
+
+              .</p>
             <div className="about-stats">
-              {[{num:"+500",lbl:"Piezas creadas"},{num:"4",lbl:"Tonos por pieza"},{num:"100%",lbl:"Artesanal"}].map(s => (
+              {[{ num: "+500", lbl: "Piezas creadas" }, { num: "4", lbl: "Tonos por pieza" }, { num: "100%", lbl: "Artesanal" }].map(s => (
                 <div key={s.lbl}><p className="stat-n">{s.num}</p><p className="stat-l">{s.lbl}</p></div>
               ))}
             </div>
@@ -60,9 +72,9 @@ export default function Home({ onSelectProduct }) {
       <div className="trustbar">
         <div className="trustbar-inner">
           {[
-            {icon:<SpaIcon style={{ fontSize: "18px" }} />, s:"100% Artesanal", d:"Sin moldes industriales"},
-            {icon:<AccessTimeIcon style={{ fontSize: "18px" }} />, s:"Trabajamos por encargo", d:"Cada pieza se crea para vos"},
-            {icon:<LocalShippingIcon style={{ fontSize: "18px" }} />, s:"Envíos a todo el país", d:"Embalaje especial para cada pieza"},
+            { icon: <SpaIcon style={{ fontSize: "18px" }} />, s: "100% Artesanal", d: "Sin producción en serie" },
+            { icon: <AccessTimeIcon style={{ fontSize: "18px" }} />, s: "Trabajo por encargo", d: "Cada pieza se crea para vos" },
+            { icon: <LocalShippingIcon style={{ fontSize: "18px" }} />, s: "Envíos a todo el país", d: "Embalaje especial para cada pieza" },
           ].map(b => (
             <div key={b.s} className="trust-item">
               {b.icon}
@@ -76,10 +88,13 @@ export default function Home({ onSelectProduct }) {
       <section id="catalogo" className="catalog">
         <div className="catalog-inner">
           <div className="sec-header">
-            <p className="sec-eyebrow">Nuestras creaciones</p>
-            <h2 className="sec-h2">Catálogo</h2>
+            {/* <p className="sec-eyebrow">Nuestras creaciones</p> */}
+            <h2 className="sec-h2">Piezas</h2>
             <div className="sec-rule" />
-            <p className="sec-desc">Todo se produce a pedido. Hacé clic en cualquier pieza para ver los tonos disponibles y consultar por WhatsApp.</p>
+            <p className="sec-desc">Cada pieza nace a pedido. <br />
+              Podés elegir el tono y hacerla propia. <br />
+              Consultas por WhatsApp para ver más modelos y opciones disponibles.
+            </p>
           </div>
 
           <div className="pgrid">
@@ -118,7 +133,7 @@ export default function Home({ onSelectProduct }) {
 
           <div className="cat-footer">
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola! Me gustaría ver más modelos disponibles.")}`} target="_blank" rel="noopener noreferrer" className="link-more">
-              Ver más modelos por WhatsApp <ChevronRightIcon style={{ fontSize: "14px" }} />
+              CONSULTAS Y DETALLES POR WHATSAPP. <ChevronRightIcon style={{ fontSize: "14px" }} />
             </a>
           </div>
         </div>
@@ -128,27 +143,30 @@ export default function Home({ onSelectProduct }) {
       <section id="proceso" className="process">
         <div className="process-inner">
           <p className="proc-eyebrow">Nuestro proceso</p>
-          <h2 className="proc-h2">El valor del <em>tiempo.</em></h2>
-          <p className="proc-desc">No somos una fábrica. Cada pieza nace el día que hacés el pedido. Mezclamos, vertemos, esperamos el fraguado natural, lijamos y sellamos a mano.</p>
+          <h2 className="proc-h2">Sin apuro. <br /> Así nace cada pieza.</h2>
+          {/* <p className="proc-desc">No somos una fábrica. Cada pieza nace el día que hacés el pedido. Mezclamos, vertemos, esperamos el fraguado natural, lijamos y sellamos a mano.</p> */}
           <div className="steps">
             {[
-              {n:"01", icon:<ShoppingBagIcon style={{ fontSize: "20px" }} />, t:"Tu encargo", d:"Elegís modelo, tono y tamaño. Confirmás con seña o pago total."},
-              {n:"02", icon:<Inventory2Icon style={{ fontSize: "20px" }} />, t:"Preparamos la mezcla", d:"Mezclamos el material según tu pedido. Cada receta es distinta."},
-              {n:"03", icon:<SpaIcon style={{ fontSize: "20px" }} />, t:"Curado natural", d:"7 a 10 días para que el concreto fragüe con su tiempo natural."},
-              {n:"04", icon:<LocalShippingIcon style={{ fontSize: "20px" }} />, t:"Entrega", d:"Embalamos con cuidado y coordinamos retiro o envío a domicilio."},
+              { n: "01", icon: <ShoppingBagIcon style={{ fontSize: "20px" }} />, t: "Tu idea", d: "Elegís modelo, tono y tamaño.Lo charlamos y lo dejo a tu gusto." },
+              { n: "02", icon: <Inventory2Icon style={{ fontSize: "20px" }} />, t: "Manos a la mezcla", d: "Preparo cada pieza de forma artesanal.No hay dos iguales" },
+              { n: "03", icon: <SpaIcon style={{ fontSize: "20px" }} />, t: "Tiempo de secado", d: "El concreto necesita su tiempo.Acá no apuro el proceso." },
+              {
+                n: "04", icon: <LocalShippingIcon style={{ fontSize: "20px" }} />, t: "Llega a vos", d: "La envuelvo con cuidado y coordinamos la entrega." },
             ].map(s => (
-              <div key={s.n} className="step">
-                <div className="step-circle">{s.icon}</div>
-                <p className="step-n">{s.n}</p>
-                <h3 className="step-title">{s.t}</h3>
-                <p className="step-desc">{s.d}</p>
-              </div>
-            ))}
+                  <div key={s.n} className="step">
+                    <div className="step-circle">{s.icon}</div>
+                    <p className="step-n">{s.n}</p>
+                    <h3 className="step-title">{s.t}</h3>
+                    <p className="step-desc">{s.d}</p>
+                  </div>
+                ))}
           </div>
           <div className="proc-quote">
             <FavoriteIcon style={{ fontSize: "18px", color: "#9c8c82", marginBottom: "14px" }} />
-            <p>"La paciencia es parte del proceso. Y eso se nota en cada pieza."</p>
-            <span>— El equipo de Puraflor Deco</span>
+            <p>"“Para acompañar lo simple <br />
+              de todos los dìas”
+              "</p>
+            <span>— Puraflor Deco</span>
           </div>
         </div>
       </section>

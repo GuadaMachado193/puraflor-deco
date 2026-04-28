@@ -1,4 +1,6 @@
-export const WHATSAPP_NUMBER = "5491100000000"; // ← Cambiá este número
+
+
+export const WHATSAPP_NUMBER = "+5493513122876"; //
 
 export const products = [
   {
@@ -6,7 +8,7 @@ export const products = [
     name: "Maceta Cilíndrica Texturada",
     subtitle: "Concreto artesanal",
     price: "$8.500",
-    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/Deco_home.jpeg",
     tag: "Más vendido",
     delay: "7 a 10 días hábiles",
     description: "Pieza cilíndrica de concreto texturado, ideal para plantas de interior. Cada unidad es única por la naturaleza del material. Incluye orificio de drenaje y tapón de silicona.",
@@ -23,7 +25,7 @@ export const products = [
     name: "Bandeja Ovalada Terra",
     subtitle: "Arcilla quemada",
     price: "$12.000",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "Deco_home.jpeg",
     tag: "Nuevo",
     delay: "7 a 10 días hábiles",
     description: "Bandeja ovalada de arcilla natural, perfecta como centro de mesa o para organizar el escritorio con elegancia. Resistente al uso cotidiano.",
@@ -39,7 +41,7 @@ export const products = [
     name: "Set Portavelas Geométrico",
     subtitle: "Concreto · Set x3",
     price: "$9.200",
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "Deco_home.jpeg",
     tag: null,
     delay: "5 a 7 días hábiles",
     description: "Set de tres portavelas de formas geométricas distintas. Diseñados para usarse juntos o por separado. Crean una atmósfera cálida y sofisticada.",
@@ -54,7 +56,7 @@ export const products = [
     name: "Centro de Mesa Minimalista",
     subtitle: "Yeso y detalle de mármol",
     price: "$15.500",
-    image: "https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "Deco_home.jpeg",
     tag: "A pedido",
     delay: "10 a 15 días hábiles",
     description: "Pieza central de alto impacto para mesa de comedor o living. Diseño orgánico asimétrico con detalles en mármol natural. Casi una obra de autor.",
@@ -71,7 +73,7 @@ export const products = [
     name: "Jarrones Dúo Orgánico",
     subtitle: "Concreto pigmentado · Par",
     price: "$18.000",
-    image: "https://images.unsplash.com/photo-1612196808214-b7e239e5f5a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "Deco_home.jpeg",
     tag: "Nuevo",
     delay: "7 a 10 días hábiles",
     description: "Par de jarrones de formas orgánicas e irregulares. No son simétricos por diseño — cada uno tiene su propia personalidad. Para flores secas o frescas.",
@@ -87,7 +89,7 @@ export const products = [
     name: "Plato Decorativo Artesanal",
     subtitle: "Arcilla blanca · Varios tamaños",
     price: "$7.800",
-    image: "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "Deco_home.jpeg",
     tag: null,
     delay: "5 a 7 días hábiles",
     description: "Plato decorativo de arcilla blanca con texturas hechas a mano. Ideal para entrada, baño o como soporte de objetos pequeños. Estilo wabi-sabi.",

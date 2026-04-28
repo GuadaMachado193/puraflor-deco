@@ -2,6 +2,8 @@ import { useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { WHATSAPP_NUMBER } from "../utils/constants";
+import "../styles/ProductModal.css";
+
 
 function buildWAUrl(product, toneId) {
   const toneName = toneId
