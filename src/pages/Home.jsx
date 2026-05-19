@@ -10,6 +10,7 @@ import Inventory2Icon from '@mui/icons-material/Inventory2';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { products, WHATSAPP_NUMBER } from "../utils/constants";
 import "../styles/Home.css";
+import imgportada from "../assets/portada.jpeg";
 
 export default function Home({ onSelectProduct }) {
   return (
@@ -17,7 +18,7 @@ export default function Home({ onSelectProduct }) {
       {/* HERO */}
       <section id="inicio" className="hero">
         <div className="hero-bg">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Decoración artesanal de concreto" />
+          <img src={imgportada} alt="Portada" />
         </div>
         <div className="hero-body">
           <div className="hero-content">
@@ -104,7 +105,7 @@ export default function Home({ onSelectProduct }) {
                   <img src={p.image} alt={p.name} />
                   <div className="pcard-overlay">
                     <div className="ov-dots">
-                      {p.tones.map(t => <span key={t.id} className="ov-dot" style={{ backgroundColor: t.color }} />)}
+                      {p.tones.map(t => <span key={t.id} className="ov-dot" style={{ background: t.background || t.color }} />)}
                     </div>
                     <button className="ov-btn">Ver &amp; Consultar</button>
                   </div>
@@ -121,7 +122,7 @@ export default function Home({ onSelectProduct }) {
                     <span className="tone-lbl">Tonos</span>
                     <div className="tone-dots">
                       {p.tones.map(t => (
-                        <span key={t.id} className="tone-dot" style={{ backgroundColor: t.color }} title={t.label} />
+                        <span key={t.id} className="tone-dot" style={{ background: t.background || t.color }} title={t.label} />
                       ))}
                     </div>
                     <span className="tone-cnt">({p.tones.length})</span>

@@ -4,11 +4,14 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { WHATSAPP_NUMBER } from "../utils/constants";
 import "../styles/ProductModal.css";
 
-
+// Función auxiliar para construir la URL de WhatsApp
 function buildWAUrl(product, toneId) {
-  const toneName = toneId
-    ? product.tones.find((t) => t.id === toneId)?.label ?? "sin especificar"
+  const selectedTone = toneId ? product.tones.find((t) => t.id === toneId) : null;
+  
+  const toneName = selectedTone
+    ? selectedTone.id === "marmolado" ? "Marmolado Real (Vetas Negras/Blancas)" : selectedTone.label
     : "sin especificar aún";
+
   const text = `Hola! Me interesa encargar:\n\n*${product.name}*\n🎨 Tono: ${toneName}\n💰 Precio: ${product.price}\n⏱ Producción: ${product.delay}\n\n¿Podés darme más información?`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 }
@@ -90,11 +93,20 @@ export default function ProductModal({ product, onClose }) {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
               {product.tones.map((tone) => (
                 <button
-                  key={tone.id} onClick={() => setSelectedTone(tone.id === selectedTone ? null : tone.id)} title={tone.label}
+                  key={tone.id} 
+                  onClick={() => setSelectedTone(tone.id === selectedTone ? null : tone.id)} 
+                  title={tone.label}
                   style={{ background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}
                 >
                   <span style={{
-                    display: "block", width: "38px", height: "38px", borderRadius: "50%", background: tone.color,
+                    display: "block", 
+                    width: "38px", 
+                    height: "38px", 
+                    borderRadius: "50%", 
+                    
+                    /* REFACTORIZADO: Forzamos la propiedad 'background' unificada eliminando la función externa */
+                    background: tone.background || tone.color,
+                    
                     border: selectedTone === tone.id ? "2.5px solid #1c1612" : "2.5px solid transparent",
                     outline: selectedTone === tone.id ? "none" : "1px solid rgba(0,0,0,0.13)",
                     boxShadow: selectedTone === tone.id ? "0 0 0 3px rgba(28,22,18,0.1)" : "none",
