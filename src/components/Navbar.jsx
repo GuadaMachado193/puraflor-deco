@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="topbar">Piezas de concreto y arcilla · Hechas a mano · Envíos a todo el país</div>
+      <div className="topbar">Piezas de concreto · Hechas a mano · Envíos a todo el país</div>
       <nav className="nav">
         <div className="nav-inner">
           <a href="#inicio" className="logo">
@@ -19,7 +19,7 @@ export default function Navbar() {
           </a>
           <div className="nav-links">
             <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
+            <a href="#nosotros">Quién Soy</a>
             <a href="#catalogo">Catálogo</a>
             <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
@@ -32,7 +32,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className={`mob-menu ${menuOpen ? "open" : ""}`}>
-          {[["inicio","Inicio"],["nosotros","Nosotros"],["catalogo","Catálogo"],["proceso","Proceso"],["contacto","Contacto"]].map(([id,label]) => (
+          {[["inicio","Inicio"],["nosotros","Quién Soy"],["catalogo","Catálogo"],["proceso","Proceso"],["contacto","Contacto"]].map(([id,label]) => (
             <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
         </div>

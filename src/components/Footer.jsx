@@ -3,6 +3,7 @@ import { WHATSAPP_NUMBER } from "../utils/constants";
 import "../styles/Footer.css";
 
 
+
 export default function Footer() {
   return (
     <footer id="contacto" className="footer">
@@ -23,7 +24,7 @@ export default function Footer() {
         <div>
           <h4 className="footer-h4">Navegación</h4>
           <ul className="footer-list">
-            {[["#inicio","Inicio"],["#nosotros","Sobre Pura Flor"],["#catalogo","Catálogo"],["#proceso","Proceso"],["#","Cuidados del concreto"]].map(([h,l]) => (
+            {[["#inicio","Inicio"],["#nosotros","Quién Soy"],["#catalogo","Catálogo"],["#proceso","Proceso"]].map(([h,l]) => (
               <li key={l}><a href={h}>{l}</a></li>
             ))}
           </ul>

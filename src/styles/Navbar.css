@@ -122,3 +122,9 @@
     border-bottom: 1px solid #f0ebe3;
     color: #1c1612;
 }
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}

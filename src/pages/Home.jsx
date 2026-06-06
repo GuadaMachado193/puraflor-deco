@@ -11,6 +11,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { products, WHATSAPP_NUMBER } from "../utils/constants";
 import "../styles/Home.css";
 import imgportada from "../assets/portada.jpeg";
+import imgFlorG from "../assets/florG-2.JPG";
 
 export default function Home({ onSelectProduct }) {
   return (
@@ -46,9 +47,9 @@ export default function Home({ onSelectProduct }) {
               <br />
               Desde entonces, creo piezas sin repetir. <br />
               Sin serie. Sin apuro. <br />
-               <br />
+              <br />
               Así nació Pura Flor. <br />
-             <br />
+              <br />
               Bienvenidos a mi mundo del concreto.
 
               .</p>
@@ -59,7 +60,7 @@ export default function Home({ onSelectProduct }) {
             </div>
           </div>
           <div className="about-img">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Proceso artesanal" />
+            <img src={imgFlorG} alt="Proceso artesanal" />
             <div className="about-quote-box">
               <StarIcon style={{ fontSize: "16px", color: "#9c8c82", marginBottom: "10px" }} />
               <p>"Cada pieza es irrepetible por naturaleza."</p>
@@ -145,28 +146,33 @@ export default function Home({ onSelectProduct }) {
         <div className="process-inner">
           <p className="proc-eyebrow">Nuestro proceso</p>
           <h2 className="proc-h2">Sin apuro. <br /> Así nace cada pieza.</h2>
-          {/* <p className="proc-desc">No somos una fábrica. Cada pieza nace el día que hacés el pedido. Mezclamos, vertemos, esperamos el fraguado natural, lijamos y sellamos a mano.</p> */}
           <div className="steps">
             {[
               { n: "01", icon: <ShoppingBagIcon style={{ fontSize: "20px" }} />, t: "Tu idea", d: "Elegís modelo, tono y tamaño.Lo charlamos y lo dejo a tu gusto." },
               { n: "02", icon: <Inventory2Icon style={{ fontSize: "20px" }} />, t: "Manos a la mezcla", d: "Preparo cada pieza de forma artesanal.No hay dos iguales" },
               { n: "03", icon: <SpaIcon style={{ fontSize: "20px" }} />, t: "Tiempo de secado", d: "El concreto necesita su tiempo.Acá no apuro el proceso." },
               {
-                n: "04", icon: <LocalShippingIcon style={{ fontSize: "20px" }} />, t: "Llega a vos", d: "La envuelvo con cuidado y coordinamos la entrega." },
+                n: "04", icon: <LocalShippingIcon style={{ fontSize: "20px" }} />, t: "Llega a vos", d: "La envuelvo con cuidado y coordinamos la entrega."
+              },
             ].map(s => (
-                  <div key={s.n} className="step">
-                    <div className="step-circle">{s.icon}</div>
-                    <p className="step-n">{s.n}</p>
-                    <h3 className="step-title">{s.t}</h3>
-                    <p className="step-desc">{s.d}</p>
-                  </div>
-                ))}
+              <div key={s.n} className="step">
+                <div className="step-circle">{s.icon}</div>
+                <p className="step-n">{s.n}</p>
+                <h3 className="step-title">{s.t}</h3>
+                <p className="step-desc">{s.d}</p>
+              </div>
+            ))}
           </div>
           <div className="proc-quote">
             <FavoriteIcon style={{ fontSize: "18px", color: "#9c8c82", marginBottom: "14px" }} />
-            <p>"“Para acompañar lo simple <br />
-              de todos los dìas”
-              "</p>
+            <p>CÓMO CUIDAR LAS PIEZAS <br />
+              Cada pieza está pensada para acompañar lo cotidiano.<br />
+              Podés limpiarla con un paño húmedo <br />
+              y usarla con alimentos secos. <br /><br />
+              Los floreros son decorativos,<br />
+              para flores secas o de tela.<br /><br />
+              No llevan agua ni líquidos.<br />
+            </p>
             <span>— Puraflor Deco</span>
           </div>
         </div>
