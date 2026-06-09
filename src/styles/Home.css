@@ -641,3 +641,18 @@
     text-transform: uppercase;
     color: #6b5d54;
 }
+
+@media (max-width: 600px) {
+  .trustbar-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .trust-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}

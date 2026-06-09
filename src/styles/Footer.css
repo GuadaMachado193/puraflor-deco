@@ -96,6 +96,9 @@
 }
 
 .footer-social a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: #9c8c82;
     transition: color 0.2s;
 }
@@ -103,7 +106,6 @@
 .footer-social a:hover {
     color: #1c1612;
 }
-
 .footer-bar {
     max-width: 1100px;
     margin: 0 auto;

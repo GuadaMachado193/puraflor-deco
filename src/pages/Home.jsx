@@ -23,7 +23,7 @@ export default function Home({ onSelectProduct }) {
         </div>
         <div className="hero-body">
           <div className="hero-content">
-            <p className="hero-eyebrow">Objetos con alma · Hecho a mano en Argentina</p>
+            <p className="hero-eyebrow">Objetos con alma · Hecho a mano</p>
             <h1 className="hero-h1">Donde todo nace <br />de lo <em>simple</em>.</h1>
             <div className="btn-row">
               <a href="#catalogo" className="btn-primary">Explorar piezas <ArrowForwardIcon style={{ fontSize: "14px" }} /></a>
@@ -43,7 +43,7 @@ export default function Home({ onSelectProduct }) {
               y me enamoré.
             </p>
             <p className="about-p">Me atrapó su forma:<br />
-              imperfecto, única. <br />
+              imperfecto, único. <br />
               <br />
               Desde entonces, creo piezas sin repetir. <br />
               Sin serie. Sin apuro. <br />
@@ -54,7 +54,7 @@ export default function Home({ onSelectProduct }) {
 
               .</p>
             <div className="about-stats">
-              {[{ num: "+500", lbl: "Piezas creadas" }, { num: "4", lbl: "Tonos por pieza" }, { num: "100%", lbl: "Artesanal" }].map(s => (
+              {[{ num: "+500", lbl: "Piezas creadas" }, { num: "3", lbl: "Tonos por pieza" }, { num: "100%", lbl: "Artesanal" }].map(s => (
                 <div key={s.lbl}><p className="stat-n">{s.num}</p><p className="stat-l">{s.lbl}</p></div>
               ))}
             </div>
@@ -144,13 +144,13 @@ export default function Home({ onSelectProduct }) {
       {/* PROCESO */}
       <section id="proceso" className="process">
         <div className="process-inner">
-          <p className="proc-eyebrow">Nuestro proceso</p>
+          <p className="proc-eyebrow">Proceso</p>
           <h2 className="proc-h2">Sin apuro. <br /> Así nace cada pieza.</h2>
           <div className="steps">
             {[
-              { n: "01", icon: <ShoppingBagIcon style={{ fontSize: "20px" }} />, t: "Tu idea", d: "Elegís modelo, tono y tamaño.Lo charlamos y lo dejo a tu gusto." },
-              { n: "02", icon: <Inventory2Icon style={{ fontSize: "20px" }} />, t: "Manos a la mezcla", d: "Preparo cada pieza de forma artesanal.No hay dos iguales" },
-              { n: "03", icon: <SpaIcon style={{ fontSize: "20px" }} />, t: "Tiempo de secado", d: "El concreto necesita su tiempo.Acá no apuro el proceso." },
+              { n: "01", icon: <ShoppingBagIcon style={{ fontSize: "20px" }} />, t: "Tu idea", d: "Elegís modelo, tono y tamaño. Lo charlamos y lo dejo a tu gusto." },
+              { n: "02", icon: <Inventory2Icon style={{ fontSize: "20px" }} />, t: "Manos a la mezcla", d: "Preparo cada pieza de forma artesanal. No hay dos iguales." },
+              { n: "03", icon: <SpaIcon style={{ fontSize: "20px" }} />, t: "Tiempo de secado", d: "El concreto necesita su tiempo. Acá no apuro el proceso." },
               {
                 n: "04", icon: <LocalShippingIcon style={{ fontSize: "20px" }} />, t: "Llega a vos", d: "La envuelvo con cuidado y coordinamos la entrega."
               },

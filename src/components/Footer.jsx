@@ -17,7 +17,8 @@ export default function Footer() {
           </a>
           <div className="footer-social">
             <a href="http://Instagram.com/puraflor.deco" target="_blank" rel="noopener noreferrer">
-              <InstagramIcon style={{ fontSize: "20px" }} />
+              <InstagramIcon style={{ fontSize: "20px" }} />  puraflor.deco
+              
             </a>
           </div>
         </div>
@@ -36,7 +37,7 @@ export default function Footer() {
             <li>WhatsApp: +54 3518507697</li>
             <li style={{ marginTop: "0.5rem" }}>
               <strong style={{ fontSize: "11px", color: "#1c1612" }}>Atención:</strong><br />
-              Lunes a Viernes, 09 a 17 hs. <br /> Sabados 09 a 12 hs.
+              Lunes a Viernes, 09 a 13 hs. <br /> Sabados 10 a 14 hs.
             </li>
           </ul>
         </div>

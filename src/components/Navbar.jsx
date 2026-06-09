@@ -14,7 +14,7 @@ export default function Navbar() {
       <nav className="nav">
         <div className="nav-inner">
           <a href="#inicio" className="logo">
-            <span className="logo-main">puraflor</span>
+            <span className="logo-main">puraflor</span> 
             <span className="logo-sub">deco · objetos artesanales</span>
           </a>
           <div className="nav-links">
