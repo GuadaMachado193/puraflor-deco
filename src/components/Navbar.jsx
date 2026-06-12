@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="topbar">Piezas de concreto · Hechas a mano · Envíos a todo el país</div>
+      <div className="topbar">Hecho en Córdoba · Envíos a todo el país</div>
       <nav className="nav">
         <div className="nav-inner">
           <a href="#inicio" className="logo">

@@ -23,11 +23,11 @@ export default function Home({ onSelectProduct }) {
         </div>
         <div className="hero-body">
           <div className="hero-content">
-            <p className="hero-eyebrow">Objetos con alma · Hecho a mano</p>
+            <p className="hero-eyebrow">Piezas que habitan tu hogar</p>
             <h1 className="hero-h1">Donde todo nace <br />de lo <em>simple</em>.</h1>
             <div className="btn-row">
               <a href="#catalogo" className="btn-primary">Explorar piezas <ArrowForwardIcon style={{ fontSize: "14px" }} /></a>
-              <a href="#proceso" className="btn-ghost">Cómo trabajamos</a>
+              <a href="#proceso" className="btn-ghost">Detrás de pura flor</a>
             </div>
           </div>
         </div>
