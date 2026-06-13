@@ -50,7 +50,7 @@ export default function Home({ onSelectProduct }) {
               <br />
               Así nació Pura Flor. <br />
               <br />
-              Bienvenidos a mi mundo del concreto.
+              ¡Bienvenidos a mi mundo del concreto.!
 
               .</p>
             <div className="about-stats">
