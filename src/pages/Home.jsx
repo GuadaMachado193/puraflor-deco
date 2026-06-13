@@ -52,7 +52,7 @@ export default function Home({ onSelectProduct }) {
               <br />
               ¡Bienvenidos a mi mundo del concreto.!
 
-              .</p>
+              </p>
             <div className="about-stats">
               {[{ num: "+500", lbl: "Piezas creadas" }, { num: "3", lbl: "Tonos por pieza" }, { num: "100%", lbl: "Artesanal" }].map(s => (
                 <div key={s.lbl}><p className="stat-n">{s.num}</p><p className="stat-l">{s.lbl}</p></div>
